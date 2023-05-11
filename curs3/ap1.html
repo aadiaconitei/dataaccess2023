@@ -20,7 +20,7 @@
         // https://cors-anywhere.herokuapp.com
         //pentru a scapa de Cros: https://stackoverflow.com/questions/10883211/why-does-my-http-localhost-cors-origin-not-work
         // https://127.0.0.1:5500/curs3/data/ap1.xml
-        const RSS_URL = `https://cors-anywhere.herokuapp.com/https://www.bnr.ro/nbrfxrates.xml`;
+        const RSS_URL = 'http://127.0.0.1:5500/curs3/ap1.xml';
 
         fetch(RSS_URL)
             .then(response => response.text())

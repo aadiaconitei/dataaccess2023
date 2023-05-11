@@ -10,6 +10,6 @@
 	</articol>
 	<articol id="3">
 		<nume>HP Pavilion</nume>
-		<categorie>Laptopuri</categorie>
+		<categorie><![CDATA[ <b>Laptopuri</b> ]]></categorie>
 	</articol>
 </catalog>
