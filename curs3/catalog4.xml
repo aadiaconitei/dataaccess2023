@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "my.dtd">
+<catalog>
+	<articol id="1">
+		<nume>Coca Cola</nume>
+		<categorie>Bauturi</categorie>
+		<descriere><![CDATA[
+		Descrierea primului articol în format <b>HTML</b>
+		]]></descriere>
+	</articol>
+	<articol id="2">
+		<nume>Ciocolata</nume>
+		<categorie>Alimente</categorie>
+		<descriere><![CDATA[
+		Descrierea celui de-al doilea articol
+		în format <b>HTML</b>
+		]]></descriere>
+	</articol>
+	<articol id="3">
+		<nume>HP Pavilion</nume>
+		<categorie>Laptopuri</categorie>
+		<descriere><![CDATA[
+		Descrierea celui de-al treilea articol
+		în format <b>HTML</b>
+		]]></descriere>
+	</articol>
+</catalog>

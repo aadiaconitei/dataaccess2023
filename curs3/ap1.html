@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Javascript parcurge si afiseaza un fisier XML</h1>
+<h2>Curs valutar</h2>
+
+<body>
+
+
+    <script>
+        //https://www.bnr.ro/nbrfxrates.xml
+// https://crossorigin.me
+        // folosim un proxi  https://cors-anywhere.herokuapp.com/corsdemo
+        // https://cors-anywhere.herokuapp.com
+        //pentru a scapa de Cros: https://stackoverflow.com/questions/10883211/why-does-my-http-localhost-cors-origin-not-work
+        // https://127.0.0.1:5500/curs3/data/ap1.xml
+        const RSS_URL = `https://cors-anywhere.herokuapp.com/https://www.bnr.ro/nbrfxrates.xml`;
+
+        fetch(RSS_URL)
+            .then(response => response.text())
+            .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+            .then(data => {
+
+                const items = data.querySelectorAll("Rate");
+                console.log(items);
+                let html = ``;
+                items.forEach(el => {
+                    html += `
+                        <article>
+                        <p>${el.attributes.currency.nodeValue}: ${el.innerHTML}
+                        </p>
+                        </article>
+                    `;
+                });
+                document.body.insertAdjacentHTML("beforeend", html);
+            });
+
+    </script>
+</body>
+
+</html>

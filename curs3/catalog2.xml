@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<articol id="1" nume="Coca Cola" categorie="Băuturi"/>
+	<articol id="2" nume="Ciocolată" categorie="Alimente"/>
+	<articol id="3" nume="HP Pavilion" categorie="Laptopuri"/>
+</catalog>

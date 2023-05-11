@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="catalog"/>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="articol" type="TipArticol"
+				minoccurs="0" maxoccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="TipArticol">
+		<xs:sequence>
+			<xs:element name="nume" type="xs:string"
+			minoccurs="1" maxoccurs="1"/>
+			<xs:element name="categorie" type="xs:string"
+			minoccurs="1" maxoccurs="1"/>
+			<xs:element name="descriere" type="xs:string"
+			minoccurs="0" maxoccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:int"/>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="schema.xsd">>
+	<articol id="1">
+		<nume>Coca Cola</nume>
+		<categorie>Băuturi</categorie>
+		<descriere><![CDATA[
+		Descrierea primului articol
+		în format <b>HTML</b>
+		]]></descriere>
+	</articol>
+	<articol id="2">
+		<nume>Ciocolată</nume>
+		<categorie>Alimente</categorie>
+		<descriere><![CDATA[
+		Descrierea celui de-al doilea articol
+		în format <b>HTML</b>
+		]]></descriere>
+	</articol>
+		<articol id="3">
+		<nume>HP Pavilion</nume>
+		<categorie>Laptopuri</categorie>
+		<descriere><![CDATA[
+		Descrierea celui de-al treilea articol
+		în format <b>HTML</b>
+		]]></descriere>
+	</articol>
+</catalog>
