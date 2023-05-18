@@ -46,12 +46,22 @@ app.get("/login", (req, res) => {
   // if there exists, send the error.
   if (bad_auth) {
     return res.render("login", {
-      error: "Invalid username or password",
+      error: "Invalid username or password dfsdfsdfsfds",
+      
     });
   } else {
     // else just render the login
     return res.render("login");
   }
+});
+app.get("/register", (req, res) => {
+  // check if there is a msg query
+  let bad_auth = req.query.msg ? true : false;
+
+  
+    // else just render the login
+    return res.render("register");
+  
 });
 
 app.get("/admin", (req, res) => {

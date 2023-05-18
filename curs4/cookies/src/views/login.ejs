@@ -12,7 +12,10 @@
                 <h2>Login</h2>
                 <% if(locals.error) {%>
                 <p class="text-danger"><%=error%></p>
-                <%}%>                
+                <%}%> 
+                <% if(locals.mess) {%>
+                    <p class="text-danger"><%=mess%></p>
+                <%}%>               
                 <div class="input-field">
                     <input type="text" name="username" id="username" placeholder="Enter Username">
                 </div>

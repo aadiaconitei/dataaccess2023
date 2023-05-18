@@ -1,0 +1,108 @@
+cd backend/
+npm init --yes
+//npm init –y
+
+npm install express dotenv cors
+npm i -D typescript @types/express @types/node
+//npm install --dev typescript @types/express @types/node
+
+npx tsc --init
+npm i -D concurrently nodemon
+//npm install --dev concurrently nodemon
+
+npm run dev
+
+// Pentru date
+npm install  body-parser mysql2 
+npm install --save-dev  @types/body-parser @types/mysql @types/dotenv
+npm install --save-dev  @types/cors
+
+curl -H "Origin: http://localhost:5500" --head http://localhost:3002
+
+
+DB
+https://www.liquidweb.com/kb/error-login-without-a-password-is-forbidden-by-configuration-see-allownopassword-solved/
+https://www.simplified.guide/phpmyadmin/enable-login-without-password
+
+https://serverfault.com/questions/237558/how-to-make-phpmyadmin-ask-for-my-username-and-password
+
+
+<script type="text/javascript">
+
+    // $(function () {
+    //     $.ajaxSetup({
+    //         headers: {
+    //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    //         }
+    //   });
+    //   var table = $('.data-table').DataTable({
+    //       processing: true,
+    //       serverSide: true,
+    //       ajax: "{{ route('books.index') }}",
+    //       columns: [
+    //           {data: 'title', name: 'title'},
+    //           {data: 'title', name: 'title'},
+    //           {data: 'author', name: 'author'},
+    //           {data: 'action', name: 'action', orderable: false, searchable: false},
+    //       ]
+    //   });
+    //   $('#createNewBook').click(function () {
+    //       $('#saveBtn').val("create-book");
+    //       $('#book_id').val('');
+    //       $('#bookForm').trigger("reset");
+    //       $('#modelHeading').html("Create New Book");
+    //       $('#ajaxModel').modal('show');
+    //   });
+    //   $('body').on('click', '.editBook', function () {
+    //     var book_id = $(this).data('id');
+    //     $.get("{{ route('books.index') }}" +'/' + book_id +'/edit', function (data) {
+    //         $('#modelHeading').html("Edit Book");
+    //         $('#saveBtn').val("edit-book");
+    //         $('#ajaxModel').modal('show');
+    //         $('#book_id').val(data.id);
+    //         $('#title').val(data.title);
+    //         $('#author').val(data.author);
+    //     })
+    //  });
+    //   $('#saveBtn').click(function (e) {
+    //       e.preventDefault();
+    //       $(this).html('Save');
+      
+    //       $.ajax({
+    //         data: $('#bookForm').serialize(),
+    //         url: "{{ route('books.store') }}",
+    //         type: "POST",
+    //         dataType: 'json',
+    //         success: function (data) {
+       
+    //             $('#bookForm').trigger("reset");
+    //             $('#ajaxModel').modal('hide');
+    //             table.draw();
+           
+    //         },
+    //         error: function (data) {
+    //             console.log('Error:', data);
+    //             $('#saveBtn').html('Save Changes');
+    //         }
+    //     });
+    //   });
+      
+    //   $('body').on('click', '.deleteBook', function () {
+       
+    //       var book_id = $(this).data("id");
+    //       confirm("Are You sure want to delete !");
+        
+    //       $.ajax({
+    //           type: "DELETE",
+    //           url: "{{ route('books.store') }}"+'/'+book_id,
+    //           success: function (data) {
+    //               table.draw();
+    //           },
+    //           error: function (data) {
+    //               console.log('Error:', data);
+    //           }
+    //       });
+    //   });
+       
+    // });
+  </script>
